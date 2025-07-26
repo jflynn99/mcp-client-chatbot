@@ -1,0 +1,660 @@
+[33ma00e534[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix: use pg.Pool for Vercel db connection
+[33m88b9692[m refactor: code run with worker (#180)
+[33m75bf672[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33m394e6ad[m[33m ([m[1;33mtag: [m[1;33mv1.17.0[m[33m)[m chore(main): release 1.17.0 (#173)
+[33mde2cf7b[m feat: add Python execution tool and integrate Pyodide support (#176)
+[33m30adfd3[m refactor: memorize (#178)
+[33m9ee4be6[m fix: generate title by user message
+[33m3fe7520[m chore: update package dependencies and add new icons
+[33md648972[m refactor: conditionally handle DB migration for non-Vercel environments
+[33m81c672f[m refactor: for node runtime handle DB migration at application startup (#174)
+[33m18de052[m chore: update repository links in documentation and changelog
+[33m00b66bb[m chore(prompt-input): replace Pause icon with Square (#175)
+[33mbcbf94d[m favicon
+[33m5f3afdc[m fix: generate title sync
+[33m142c9a8[m refactor: thread title
+[33md249406[m README.md
+[33mdd90b60[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33mfc11617[m[33m ([m[1;33mtag: [m[1;33mv1.16.0[m[33m)[m chore(main): release 1.16.0 (#152)
+[33mdbbb6af[m refactor: code runner
+[33m073219c[m Update README.md
+[33m9f4e3f7[m docs: enhance contributing guidelines and README for clarity and visual documentation
+[33m4e4905c[m fix: bug(LineChart): series are incorrectly represented #165
+[33m3e66226[m fix(workflow-panel): fix save button width (#168)
+[33me25e10a[m fix: js executor tool and gemini model version (#169)
+[33m41f5ff5[m fix(scripts): parse openai compatible on windows (#164)
+[33m31dfd78[m feat: Lazy Chat Title Generation: Save Empty Title First, Then Generate and Upsert in Parallel (#162)
+[33m7ceb9c6[m feat: update mention ux (#161)
+[33m277b4fe[m fix: ignore tool binding on unsupported models (server-side) (#160)
+[33m4f52d65[m refactor: change insertMessage to upsertMessage in the userMessage insertion (#153)
+[33m9f03cbc[m feat: publish container to GitHub registry (#149)
+[33ma10c659[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33mba95920[m[33m ([m[1;33mtag: [m[1;33mv1.15.0[m[33m)[m chore(main): release 1.15.0 (#143)
+[33m12b18a1[m feat: Add js-execution tool and  bug fixes(tool call) (#148)
+[33me615e22[m chore: update package dependencies and improve AI model configurations
+[33m7bcd267[m refactor: remove unused useRef import from ToolModeDropdown
+[33m2e82264[m refactor
+[33md06db0b[m fix: enhance ToolModeDropdown with tooltip updates and debounce functionality
+[33m211c236[m chore: update dependencies in package.json and pnpm-lock.yaml to latest versions
+[33m710f22e[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33m2bc121a[m[33m ([m[1;33mtag: [m[1;33mv1.14.1[m[33m)[m chore(main): release 1.14.1 (#142)
+[33m0795524[m fix: tool select ui (#141)
+[33m39d200d[m refactor: tool management: consolidate default tools into a new toolki… (#139)
+[33m28a6f74[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33m55b08d7[m[33m ([m[1;33mtag: [m[1;33mv1.14.0[m[33m)[m chore(main): release 1.14.0 (#136)
+[33mc38a7ea[m feat(workflow): stable workflow  ( add example workflow : baby-research ) (#137)
+[33me1a120a[m Update README.md
+[33mee79423[m chore: project rename (#134)
+[33m0cfbffd[m feat(workflow): add auto layout feature for workflow nodes and update UI messages
+[33m25580a2[m fix(api): handle error case in chat route by using orElse for unwrap
+[33mbea76b3[m feat: web-search with images
+[33m420ed62[m Update README.md
+[33mc529292[m fix(workflow): llm structure Output
+[33me82923d[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33m621c658[m[33m ([m[1;33mtag: [m[1;33mv1.13.0[m[33m)[m chore(main): release 1.13.0 (#128)
+[33mf7b4ea5[m feat: Add web search and content extraction tools using Tavily API (#126)
+[33mef65fd7[m fix(workflow): simplify mention formatting by removing bold styling for non-empty values
+[33m92ff9c3[m fix(workflow): improve mention handling by ensuring empty values are represented correctly
+[33m78b7add[m fix: workflow condition node issue
+[33ma7fb0e6[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33m1e18591[m[33m ([m[1;33mtag: [m[1;33mv1.12.1[m[33m)[m chore(main): release 1.12.1 (#123)
+[33m80bca33[m Refactor README.md to streamline the Table of Contents and clarify tool selection versus mentions, enhancing overall documentation clarity.
+[33m86962ad[m Update README.md
+[33m23e0f69[m Update README.md to reflect project name change to Better Chatbot and enhance documentation on custom workflows and tool integration.
+[33m2490640[m refactor mention label
+[33mdd43de9[m fix(workflow): enhance structured output handling and improve user notifications
+[33m0545227[m refactor(output-schema-editor): remove unused schema properties and enhance textarea styling
+[33mdfdc142[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33mc4ea7ad[m[33m ([m[1;33mtag: [m[1;33mv1.12.0[m[33m)[m chore(main): release 1.12.0 (#120)
+[33mb4e7f02[m feat(chat): enable @mention and tool click to trigger workflow execution in chat (#122)
+[33maa970b6[m fix: clean changlelog and stop duplicate attributions in the changelog file (#119)
+[33m546d25e[m refactor(auth): update session handling and improve sidebar user component
+[33mc384fb8[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33mac7ebb8[m[33m ([m[1;33mtag: [m[1;33mv1.11.0[m[33m)[m chore(main): release 1.11.0 (#115)
+[33m10ec438[m feat(workflow): Add HTTP and Template nodes with LLM structured output supportWorkflow node (#117)
+[33m7d2f65f[m feat(workflow): add HTTP node configuration and execution support
+[33m752f8f0[m fix: update ToolMessagePart to use isExecuting state instead of isExpanded
+[33mfa005aa[m fix: add POST endpoint for MCP client saving with session validation
+[33m61ebd07[m fix: split theme system into base themes and style variants
+[33mde64c51[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33mcf5817e[m[33m ([m[1;33mtag: [m[1;33mv1.10.0[m[33m)[m chore(main): release 1.10.0 (#106)
+[33m836ffd7[m fix(workflow): MPC Tool Response Structure  And Workflow  (#113)
+[33m1e77a92[m session redirect
+[33m4103c1b[m fix: update tool selection logic in McpServerSelector to maintain current selections
+[33m2f5ada2[m feat: workflow beta (#100)
+[33m40f1faa[m Update create-openai-compatiable.ts
+[33mc855a6a[m feat(releases): add debug logging to the add authors and update release step (#105)
+[33m8cabd62[m update CHANGELOG.md with author info [skip ci] [skip release]
+[33m3b188ae[m[33m ([m[1;33mtag: [m[1;33mv1.9.0[m[33m)[m chore(main): release 1.9.0 (#98)
+[33me0e4443[m feat: credit contributors in releases and changlogs (#104)
+[33m7209cbe[m fix: update config file path in release workflow
+[33mbea2588[m fix: increase maxTokens for title generation in chat actions issue  #102
+[33m2bb94e7[m fix: update adding-openAI-like-providers.md (#101)
+[33m3218511[m enhance ProjectDropdown with voice chat functionality
+[33me5e9a7c[m refactor: update voice chat state management
+[33mcb4086c[m refactor: McpServerSelector and add McpServerToolSelector component
+[33m0393f7a[m fix: temporary chat initial model
+[33ma0cfad1[m[33m ([m[1;33mtag: [m[1;33mv1.8.0[m[33m)[m chore(main): release 1.8.0 (#97)
+[33m6682c9a[m feat: add openAI compatible provider support (#92)
+[33m09d1b8b[m chore: tool Part ui update
+[33ma7284f1[m fix: Enhance component styles and configurations
+[33m176ff5d[m preferencese ui update
+[33mba63654[m add AutoHeight component and update keyboard shortcut
+[33md89e808[m chore: 401,403
+[33mc2b3836[m docs: update README and system prompts guide
+[33m7703ce7[m chore: system prompt guide
+[33mc11229e[m[33m ([m[1;33mtag: [m[1;33mv1.7.0[m[33m)[m chore(main): release 1.7.0 (#90)
+[33md45c968[m feat: Per User Custom instructions (#86)
+[33m1762d51[m refactor: adjust ChatGreeting component styles
+[33m7b1cdd3[m Update README.md
+[33m4e7055e[m[33m ([m[1;33mtag: [m[1;33mv1.6.2[m[33m)[m chore(main): release 1.6.2 (#80)
+[33m66524a0[m fix: unify SSE and streamable config as RemoteConfig (#85)
+[33m1519799[m fix: enhance error handling in chat bot component
+[33m0e826a5[m refactor: update message part components to use showActions prop
+[33m53574aa[m Update README.md
+[33meb15b55[m fix: improve session error handling in authentication
+[33m4607f40[m chore: update environment variables and README for clarity
+[33mb40c95a[m refactor: update readme (#82)
+[33m82b16b3[m chore: update Korean greeting message for improved clarity
+[33m2ebbb5e[m fix: support OpenAI real-time chat project instructions
+[33md11c0ae[m refactor: improve theme selection UI in sidebar
+[33m0a9bbc0[m refactor: enhance locale retrieval logic
+[33mdd60511[m[33m ([m[1;33mtag: [m[1;33mv1.6.1[m[33m)[m chore(main): release 1.6.1 (#77)
+[33m65d18cb[m refactor: speech ux (#79)
+[33mbaa849f[m fix: speech ux
+[33ma266f99[m chore: Add more file types to lint staged (#76)
+[33m339f268[m chore: update CHANGELOG and remove commitlint configuration
+[33m28ab39f[m[33m ([m[1;33mtag: [m[1;33mv1.6.0[m[33m)[m chore(main): release 1.6.0 (#72)
+[33me34d43d[m feat: add Spanish, French, Japanese, and Chinese language support with UI improvements (#74)
+[33m987c442[m feat: implement cold start-like auto connection for MCP server and simplify status (#73)
+[33ma379cd3[m feat: add husky for formatting and checking commits  (#71)
+[33m0c1e7eb[m Fix: remove file to get file types for lint-staged
+[33m67988b8[m Feat: add lint-staged and remove commitlint
+[33m97432ef[m chore: remove comment in commitlint config
+[33m3dcde85[m fix: hsuky
+[33m067d58d[m feat: add husky
+[33m99a3b1d[m refactor: mcp storage, mcp manager (#70)
+[33m36603f3[m Add permissions to PR check workflow for enhanced access control
+[33m34f2f67[m Update GitHub Actions workflow to simplify test command by removing 'run' from the test execution step.
+[33m8dc96ea[m Refactor MCP client management to use async/await for improved readability and error handling. Update related functions to ensure proper client retrieval and configuration management.
+[33m3072f56[m Enhance Docker setup by adding a new command for building and running the application container
+[33med2cc5b[m Refactor cache initialization to use environment constants for better configuration management
+[33m51e6fb8[m update memory cache
+[33m3be4ba9[m chore: add Danger configuration for PR title validation and create workflow … (#69)
+[33m77b4e34[m Rename workflow from "Danger PR Check" to "PR Title Check" for clarity
+[33m4c02b9f[m Update CONTRIBUTING.md for clarity and consistency in guidelines
+[33mcdf4b01[m add Danger configuration for PR title validation and create workflow for automated checks
+[33m6afc867[m[33m ([m[1;33mtag: [m[1;33mv1.5.2[m[33m)[m chore(main): release 1.5.2 (#68)
+[33m91085af[m chore(main): release 1.5.2
+[33md185514[m chore: release 1.5.2
+[33mac47de0[m chore: remove changeset configuration and related markdown files, along with GitHub workflows for changeset management
+[33mdd36e7c[m chore: revert version to 1.5.1, remove CHANGELOG, and update workflows to use pnpm for dependency installation
+[33m0dc558e[m chore: add GitHub workflows for automated changeset PR creation and manual release
+[33mb4349ab[m fix: UI improvements for mobile experience (#66)
+[33m769112e[m refactor: remove unused import from app-sidebar-threads component
+[33m2eee8ba[m fix: enhance mobile UI experience with responsive design adjustments
+[33m5034f57[m Version Packages (#65)
+[33m07c6a5d[m Version Packages
+[33mcab7c06[m chore: update release workflow permissions to allow write access for contents and pull requests
+[33mc4a4a06[m chore: revert version to 1.5.1, remove CHANGELOG, and update release workflow to use pnpm
+[33m2a3ba99[m chore: switch dependency installation from pnpm to yarn in release workflow
+[33md2a1883[m chore: update author name in package.json, add privatePackages configuration in changeset, and install changesets CLI in release workflow
+[33m930e162[m chore: add changeset file for MCP client chatbot patch
+[33m2f7df4c[m chore: remove redundant dependency installation step from release workflow
+[33m6b986ed[m chore: add GitHub Actions workflow for automated release process and update changeset commands in package.json
+[33mcf9631d[m chore: update version to 1.5.2 and add CHANGELOG for recent changes
+[33m8783943[m feat: Add support for Streamable HTTP Transport #56 (#64)
+[33m43d8f56[m Merge branch 'main' into feat/support-StreamableHTTPClient
+[33m9ae823b[m feat: introduce changesets for version management and fix OpenAI voice chat options bug (#63)
+[33mddf4147[m changeset
+[33mc3413c3[m feat: enhance MCPClient transport handling with StreamableHTTPClientTransport and fallback to SSE
+[33mb8ca4cb[m refactor: simplify voice chat integration by removing unused useVoiceChat memoization and directly using OpenAIVoiceChat
+[33m4b062ce[m refactor: move voice-assistant rules to speech system prompt and clean up user profession handling
+[33m70a633d[m Merge branch 'main' into main
+[33m10a09ee[m docs: update contributing guidelines and add a thank you note for contributors
+[33m1c9048a[m docs: add contributing guidelines and link in README
+[33medca3dd[m chore: update changeset commands in package.json and modify changelog configuration
+[33m79be2ca[m chore: add changeset commands to package.json and update changelog configuration
+[33me4dbea8[m chore: remove @changesets/cli dependency from package.json and pnpm-lock.yaml
+[33md90ef69[m chore: update package version to 1.5.1, add @changesets/cli dependency, and initialize changeset configuration
+[33md5f6b13[m refactor: rename useOpenAIVoiceChat to OpenAIVoiceChat for clarity and update usage in VoiceChatBot component
+[33m718e8a2[m Update .env.example with better auth URL (#59)
+[33m5a33626[m feat: implement speech system prompt and update voice chat options for enhanced user interaction
+[33m90a3e7b[m Update .env.example
+[33m2da3e57[m Update README.md
+[33m1e2fd31[m feat: update MCP server UI and translations for improved user experience
+[33mab8cefa[m Merge branch 'main' into brrock-patch-1
+[33m7dde3f1[m[33m ([m[1;33mtag: [m[1;33mv1.5.1[m[33m)[m feat: set maxTokens to 30 in generateTitleFromUserMessageAction for improved title generation
+[33m6719032[m fix `INVALID_ORIGIN` issue (#62)
+[33m6199904[m Merge branch 'cgoinglove:main' into main
+[33m8e9feb2[m refactor: remove baseURL logging and conditional assignment from auth server for cleaner code
+[33m04f771a[m fix: update sign-out behavior to redirect to sign-in page instead of … (#61)
+[33m93271dc[m Merge branch 'main' into main
+[33m3001591[m fix: update sign-out behavior to redirect to sign-in page instead of reloading the window for improved user experience
+[33m463ea4b[m fix: update translation key in ErrorMessage component for improved lo… (#60)
+[33m789172b[m fix: update translation key in ErrorMessage component for improved localization consistency
+[33m2608cfa[m Merge branch 'main' into refactor
+[33mc1d3e3b[m feat: remove experimental caching option from Next.js config, add deepmerge dependency, and enhance message handling in i18n request for improved localization
+[33ma0069f5[m chore: remove trustedOrigins from auth configuration to streamline setup
+[33m37b46e9[m Update README.md
+[33m1ec2a8a[m Update .env.example
+[33mfd6bcd5[m Update .env.example
+[33m99e82c5[m refactor: reorganize ThreadDropdownComponent within AppHeader for improved readability and maintainability
+[33m6ca13fd[m feat: add logging for base URL configuration in auth server and update baseURL assignment for better clarity
+[33m0833143[m Merge branch 'refactor'
+[33m0c7be80[m feat: enhance TemporaryChat component with new instructions feature, add corresponding translations, and improve UI interactions in AppHeader for better user experience
+[33m4a5489c[m fix: update lastThreadAt calculation in chat repository to handle null values by using COALESCE for better data integrity
+[33m84070d5[m feat: refactor chat preferences and shortcuts handling by replacing ShortcutsProvider with AppPopupProvider, update state management for temporary chat, and enhance keyboard shortcut functionality in related components
+[33m965c7a8[m Update README.md (#58)
+[33mcb439da[m Update README.md
+[33m874ca22[m Update README.md
+[33m5cb31b5[m feat: enhance TemporaryChat component with improved shortcut key display and update AppHeader to remove GitHub link, streamline UI interactions in AppSidebarUser for reporting issues and joining community
+[33m314973c[m feat: add new translations for reporting issues and joining the community, remove unused language selection component, and enhance theme selection functionality in the sidebar
+[33ma84c343[m Add Claude 4 (#57)
+[33m90406e4[m Add Claude 4
+[33m5319d9c[m feat: add new translations for project and chat management, enhance sidebar components with improved UI interactions, and implement dynamic project and chat visibility toggles
+[33m3bb8fd3[m[33m ([m[1;33mtag: [m[1;33mv1.5.0[m[33m)[m feat: add language translation guidelines and instructions for contributing new languages to the chatbot
+[33md71997d[m feat: enhance localization by adding new translations for chat, project, and keyboard shortcuts, and improve UI components with dynamic text rendering
+[33mbf05c55[m feat: add common UI translations and enhance project and thread management components with improved localization
+[33mc254c84[m feat: add chat-related translations and enhance UI components with animations and improved accessibility
+[33md97d891[m feat: implement language selection component and enhance authentication UI with improved translations and user prompts
+[33m9bda6ba[m refactor(Button): improve button component styles and structure, enhance variant definitions, and streamline props handling
+[33m1389e0a[m feat: enhance authentication UI and add Korean translations
+[33ma9457d5[m feat: start i18n
+[33m0e3781f[m Enhance AppSidebarThreads component: implement thread grouping by date for improved organization, add memoization for performance optimization, and update sidebar layout to handle empty states more gracefully.
+[33ma36de72[m Refactor ChatLayout and introduce ShortcutsProvider: streamline session handling with cookie-based sidebar state management, enhance user experience by redirecting unauthenticated users, and encapsulate keyboard shortcuts logic in a new provider component.
+[33m8ee622e[m Remove unused import of 'equal' from MCP editor component to improve code clarity.
+[33mcd3b151[m Update Greeting component: add className to FlipWords for improved styling, remove unused storeMutate call in AppSidebarThreads, and enhance Skeleton component in Sidebar with background color for better UI consistency.
+[33m7d33d79[m Refactor MCP editor component: remove unused debounce for JSON conversion, streamlining state management and improving code clarity.
+[33mc0627ee[m Enhance ChatLayout component: refactor session handling to include a refetch mechanism and implement a timeout for session validation, improving user experience during chat interactions.
+[33m28b2eca[m Add error handling for MCP server addition: throw an error if adding MCP servers is not allowed. Update error display in shared toast component to use a utility function for better error formatting.
+[33m57305e1[m[33m ([m[1;33mtag: [m[1;33mv1.4.0[m[33m)[m Update SignIn page layout: reduce gap between buttons for improved UI consistency.
+[33m9c9c08d[m Refactor OAuth environment variable handling: remove NEXT_PUBLIC prefix from Google and GitHub client IDs in .env files and update related documentation. Adjust Docker configuration to use .env.docker for environment variables.
+[33m72accea[m Refactor OAuth environment variables: update .env.example and configuration files to use NEXT_PUBLIC prefix for Google and GitHub client IDs. Add OAuth setup guide to documentation for better user onboarding.
+[33m6686760[m Update .dockerignore to include .next directory, ensuring proper handling of build artifacts in Docker.
+[33m62677b3[m Update ChatBot component to utilize threadList for URL state management on message finish, enhancing chat functionality.
+[33m91895fd[m Force dynamic rendering on HomePage to enhance chat functionality.
+[33m62234bd[m Update README and .env.example: clarify API key instructions, enhance deployment links for Vercel, and improve documentation on chatbot features and environment variables.
+[33m1e072d0[m Update .env.example: add comments for LLM provider API keys, Better Auth secret, database configuration, and OAuth settings; ensure clarity on file-based MCP config usage.
+[33mc5c3ef2[m Update authentication flow: add SignIn page, modify middleware to redirect to /sign-in, and update environment variables for Google and GitHub authentication. Adjust links in SignUp page and improve user sidebar display.
+[33m818b9ee[m Merge branch 'main' into feat/better-auth
+[33m419517f[m[33m ([m[1;33mtag: [m[1;33mv1.3.1[m[33m)[m Enhance chat functionality: force dynamic rendering on HomePage, update ChatBot to manage URL state on message send, and improve sidebar navigation with router refresh on link clicks.
+[33mf4a8e2b[m Update Card components in Login and SignUp pages to remove shadow for a cleaner design; modify fetcher utility to follow redirects during data fetching.
+[33m090b377[m Update authentication middleware: comment out debugLogs in auth configuration and add console log for sign-in path check in v1.4.0_user_migrate_middleware to enhance debugging and streamline user sign-in process.
+[33mf03423b[m Refactor user migration middleware: integrate v1.4.0_user_migrate_middleware directly into server.ts for seamless user password migration from the user table to the account table, and remove the separate middleware file to streamline the authentication process.
+[33m5c311cf[m Add restriction to prevent adding MCP servers when environment variable is set
+[33m9a3c4a3[m Update font variables in globals.css and layout.tsx to use Geist font styles for improved typography consistency.
+[33m1800511[m Implement user migration middleware: add v1.4.0_user_migrate_middleware to facilitate user password migration from the user table to the account table, and update auth configuration to include middleware hooks for seamless authentication during the transition.
+[33m8cf3080[m Update README and Korean documentation to include DISABLE_SIGN_UP configuration: add explanation for the new setting to control user registration status.
+[33m14308a1[m Refactor authentication structure: update import paths for auth client and server, add new auth client and server modules, and modify .env.example to include DISABLE_SIGN_UP configuration for better authentication management.
+[33ma2b1ae0[m Update authentication secret references in documentation: replace `AUTH_SECRET` with `BETTER_AUTH_SECRET` in ko.md, docker.md, and vercel.md for consistency and clarity.
+[33m87600aa[m Refactor authentication and user repository: simplify middleware session cookie handling, remove unused user registration logic, and clean up user repository methods. Update .env.example for better auth secret generation guidance.
+[33m910d4b4[m Enhance authentication flow: update middleware to redirect to login if session cookie is missing, modify login and sign-up pages to include callback URL, and improve session handling in chat layout and sidebar components. Additionally, ensure error handling in auth client triggers a page reload on sign out.
+[33m1a5268b[m Merge branch 'main' into feat/better-auth
+[33me353595[m Add color-scheme property to dark themes in globals.css for improved theme support
+[33me2f1385[m Remove unused dependency '@ai-sdk-tool/parser' and related references from package.json and pnpm-lock.yaml. Update models.ts to simplify model definitions by removing middleware wrapping for specific models.
+[33m9c0537c[m Refactor authentication imports to use the new auth-client module and update middleware to log session cookies for debugging purposes.
+[33m564d711[m Implement better authentication: replace next-auth with a custom auth client, streamline session management, and remove deprecated authentication code. Update user session handling across components and API routes.
+[33m9b5c9fd[m Merge branch 'main' into feat/better-auth
+[33ma49fc59[m[33m ([m[1;33mtag: [m[1;33mv1.3.0[m[33m)[m Update global styles and prompt input component: adjust background and sidebar colors for improved theme consistency, and enhance the prompt input's background opacity for better visibility.
+[33m3a69fda[m Refactor global styles and theme management: update CSS variables to use HSL color format, streamline theme definitions, and adjust layout component for improved theme handling.
+[33m3273646[m Add colours (#51)
+[33m73aec3b[m Refactor imports in use-voice-chat.openai.ts to remove unused useMemo hook
+[33md1e0c4d[m Refactor theme handling in components to use a centralized theme system for consistent dark and default theme management across MermaidDiagram, PreBlock, and Sonner components.
+[33m7005ee2[m Refactor theme management by centralizing base themes in a constants file and updating the theme selection UI to use checkboxes instead of a dropdown.
+[33me022e95[m Move theme changer
+[33me64172d[m switch to a nicer accent and remove comments
+[33m2e43cc6[m Feat: add pink themes
+[33m6a2f8e9[m Fix: css
+[33m6727840[m schema
+[33m35233b1[m remove stuff
+[33me78ad4b[m Add colours
+[33m7ae9c06[m Update chart components to use 'bg-card' class for consistent styling
+[33m45797db[m Refactor color variable usage in chart components and update global styles
+[33m5a4b7a5[m Refactor authentication setup to use better-auth package
+[33mf2e65a1[m Add better-auth package and implement basic authentication setup
+[33m16baf00[m[33m ([m[1;33mtag: [m[1;33mv1.2.0[m[33m)[m Remove RELEASE_NOTES.md file, which contained details about the OpenAI Realtime Voice Chat feature with MCP Server.
+[33mdf2b793[m Add release note for OpenAI Realtime Voice Chat with MCP Server
+[33mcf13e9d[m feat: realtime voice chatbot with MCP tools (#50)
+[33m3acee98[m Add error handling for non-200 responses in useOpenAIVoiceChat function
+[33m1f8e63f[m Update message handling to include createdAt timestamp
+[33md9b0298[m Update UserMessagePart and VoiceChatBot for improved message handling
+[33me62eced[m Refactor UserMessagePart to include prompt paste length check
+[33mb80412c[m Remove debug logging from POST route in chat API
+[33me7748f1[m Update README.md to reflect new Open Audio Real-Time Chat feature and support for OpenAI provider
+[33m487d4cc[m Merge branch 'main' into feat/realtime-sts
+[33m7ee2d38[m Enhance voice chat functionality and state management
+[33me922e45[m Add EnabledMcpTools component for enhanced tool selection in VoiceChatBot
+[33m89b0e92[m 도구 선택 드롭다운 및 선택기에서 비활성화 기능 추가
+[33mf4ffd48[m 음성 채팅 봇 UI 개선 및 도구 선택 기능 추가
+[33m0c44790[m 음성 채팅 봇에 시작 사운드 추가 및 관련 로직 개선
+[33m74564bd[m Enhance VoiceChatBot UI and message handling
+[33me3006c1[m Refactor message handling and enhance voice chat UI components
+[33m8c5750e[m Enhance voice chat functionality and UI components
+[33mba7673b[m fix(chat): prevent infinite MCP tool call loop by precomputing toolChoice (#49)
+[33mb5924e6[m changes wrt comment
+[33mc6b0b97[m fix test
+[33m9b6399c[m fix tool call loop
+[33m49e3d1f[m Initialize error state in useOpenAIVoiceChat and clean up tracks on stop
+[33m80e6c70[m Refactor OpenAI Realtime API to remove model from request body destructuring
+[33m0e789eb[m Update UI components for improved user interaction
+[33mea8837b[m Refactor layout and enhance voice chat functionality
+[33mc961390[m Implement registration disable feature in registerAction
+[33m1a20975[m OpenAI Realtime API integration and voice chat refactor
+[33m5e509c2[m 집가서해야징
+[33ma22d40c[m good night
+[33m412bf7a[m Update package dependencies and AI model configurations
+[33mbdf67cf[m Enhance Greeting component with dynamic word display
+[33m44008da[m Merge branch 'main' into feat/realtime-sts
+[33m8be8fc3[m Refactor TemporaryChat component to use temporaryModel for API requests
+[33me3fd140[m Enhance error handling in MCPClient to return structured error content
+[33m484cc85[m Refactor AI model and MCP client code
+[33m8d15477[m Enhance app state management and UI components
+[33m6a5d71f[m[33m ([m[1;33mtag: [m[1;33mv1.1.0[m[33m)[m feat: Shortcuts Info
+[33m10be5d6[m Implement Chat Preferences Popup component and integrate it into the user sidebar
+[33m00ad482[m Update package dependencies and improve component styles
+[33m6d67f19[m Merge pull request #46 from brrock/patch-1
+[33mf3147ca[m Update README.md
+[33m316d66c[m Update .env.example
+[33m3cbd44c[m Update models.ts
+[33mee04360[m Merge branch 'main' into patch-1
+[33me9f1b26[m Merge pull request #47 from brrock/patch-2
+[33m3414e90[m PT.2
+[33m06d0977[m Fixes
+[33m48a9bdb[m Merge branch 'main' into patch-1
+[33m7d17b3a[m Merge branch 'main' into patch-2
+[33ma4387d6[m fix: improve error handling in chat route and adjust message part styling
+[33mdec7489[m Merge branch 'main' into feat/realtime-sts
+[33mbc447fc[m Update vercel.md
+[33m4e2d72b[m Update README.md
+[33maa229aa[m Feat: Add file based MCP servers and fix docker tag
+[33meb0a295[m update readme
+[33ma15791f[m Feat: Add env variables for deafult model and ollama url
+[33md510aad[m Merge pull request #45 from cgoinglove/refactor
+[33m95008c9[m refactor: remove unused logger import from cache index
+[33m28f4bc6[m refactor: remove unused redirect import from chat route
+[33m6d31966[m feat: implement user caching and improve error handling in authentication flow
+[33m5baa3fe[m refactor: enhance MCP config storage with in-memory caching and improved client refresh logic
+[33ma0855b5[m chore: update pnpm-lock.yaml to add '@openrouter/ai-sdk-provider' and related dependencies
+[33m618bdc0[m Merge branch 'main' into refactor
+[33med56718[m chore: rename copy:env script to initial:env and update README for environment setup instructions
+[33m711b1a1[m Merge pull request #44 from brrock2/patch-1
+[33mc12b79e[m Update .env.example
+[33mff2c25a[m Merge pull request #43 from ronaldaug/main
+[33m9d8a5dd[m rollback: fb-mcp-config-storage
+[33m8b64fdc[m doc: update doc for open router
+[33md884597[m chore: update .env.example to clarify PostgreSQL usage and ensure proper configuration
+[33ma391ce4[m feat: add open router
+[33m172a2a8[m docs: update Vercel deployment instructions and README for improved clarity and API key guidance
+[33me91f241[m[33m ([m[1;33mtag: [m[1;33mv1.0.0[m[33m)[m Merge pull request #33 from brrock/main
+[33mad04e37[m chore: update environment configuration to use .env and refactor related scripts for improved loading
+[33m23bef0b[m 📚 docs: add instructions for using a custom database with Docker
+[33mfd8cae7[m chore: update environment configuration to use .env.local and adjust related scripts and Docker settings
+[33m91ed52c[m refactor: rename environment constants for clarity and update Dockerfile ARG
+[33m2a0aff2[m chore: clean up README.md by removing unnecessary blank lines and improving formatting
+[33m7926e0f[m Merge branch 'main' into brrock/main
+[33m4d2f165[m feat: add Discord badge and section to README for community engagement
+[33m3bddbbf[m chore: add .mcp-config.json to .gitignore
+[33mc066b32[m chore: add migration files to Dockerfile for database setup
+[33m1856e9f[m refactor: replace consola with console for logging in copy-env and db-migrate scripts
+[33mbfc6585[m fix: change CMD to use shell form for sequential commands (pnpm db:migrate && pnpm start) in Dockerfile
+[33md49f275[m fix: docker postgres not finsihed
+[33m66b9e6e[m Bump deps
+[33m9bb4b96[m Fixes and polishes
+[33m396a8c1[m Merge branch 'main' into main
+[33m24c3947[m feat: implement real-time chat session creation with OpenAI API
+[33m7a800b8[m Update README.md
+[33me8a4e1c[m feat: enhance MCP server selection with link to add a server when none are detected
+[33mfe216ec[m Rename .dockeringore to .dockerignore
+[33m9c4b374[m Merge branch 'main' into brrock/main
+[33m092d6b2[m chore: move node version requirement to engines field in package.json
+[33m9d12895[m chore: update node engine requirement to allow versions >=18
+[33m4c49c51[m Update docker.md
+[33m89dc01e[m Update compose.yml
+[33ma52d8ed[m Update compose.yml
+[33m29c8d83[m Update README.md
+[33ma41dfcb[m Updates to dockerfile and postinstall (polishing) and update lock
+[33m8586920[m Update Dockerfile
+[33mecd9d9e[m Add bun and UV for MCP support
+[33m47f29b9[m Some changes, add vercel button, postinstall and guides
+[33md809901[m Update docker.md
+[33mb5bafa2[m Merge branch 'cgoinglove:main' into main
+[33mf044699[m Merge pull request #38 from aistack-lab/table-and-footnotes-support
+[33m95f155b[m Update environment variable handling for local development. Changed NO_HTTPS from 'local' to 'true' in compose.yml and package.json, and adjusted middleware logic accordingly.
+[33m24f5f46[m Refactor environment configuration and update database migration scripts. Removed Vercel-specific checks, streamlined Docker environment variables, and added a new table for MCP server configurations in the database.
+[33m449cffc[m feat: add remark-gfm for table / footnote support
+[33mdfcdd24[m Update .dockeringore
+[33mf6b1930[m Update README.md
+[33m2738bae[m do dns
+[33md254875[m Finish docker file
+[33m18e1ad0[m Chore: Fix vercel env not found (due to client compoent in MCP editor and format
+[33m1d4e987[m yes
+[33mf6f59a8[m Merge remote-tracking branch 'refs/remotes/origin/main'
+[33m60b9de8[m tests of auth
+[33mbfb477f[m Merge branch 'cgoinglove:main' into main
+[33me8caa3f[m refactor: update label text for clarity in ChatPreferencesDialogContent component
+[33mf3dddf9[m fix: adjust background color in dark mode for improved contrast in globals.css
+[33m81b700a[m refactor: improve styling and opacity adjustments in McpServerSelector component
+[33m3402ba3[m fix: correct conditional rendering for MCP server list in McpServerSelector component
+[33me02d402[m refactor: replace MessagesSquareIcon with Settings2 in AppSidebarUser component
+[33mb9fb409[m feat: add loading state to ToolSelector and refactor MCP server handling in McpServerSelector
+[33m233e19a[m refactor: update link styling in markdown component and adjust border radius in user message part
+[33me6a3247[m Finish readme
+[33m8ec33a7[m Remove some things
+[33me55dd18[m Rewrite
+[33mbe3ce69[m Merge remote-tracking branch 'upstream/main'
+[33m54673c4[m refactor: update color variables in globals.css and adjust debounce timing in MermaidDiagram component
+[33m92634d5[m feat: add keyboard shortcut for new chat and update tooltip with shortcut information
+[33md07cfed[m refactor: enhance mention input handling and update UI components for better user experience
+[33m79dae6e[m refactor: simplify professional context and enhance response style instructions in prompts
+[33m975fd48[m refactor: streamline user profession context and addressing preferences in prompts
+[33m37d0f3d[m Merge pull request #34 from cgoinglove/808f21e
+[33m836b76f[m Merge branch 'main' into 808f21e
+[33mdb3fd64[m Merge pull request #32 from aistack-lab/mermaid
+[33m66cda70[m refactor: improve MermaidDiagram component with debouncing and state management
+[33mcb47cd7[m chore: remove rehype-mermaid dependency from package.json
+[33m808f21e[m fix: add vizualization system prompt part
+[33m5c3ad28[m fix: first validate, then render
+[33mb628f8c[m chore: linting fix
+[33m3484384[m Merge branch 'main' of https://github.com/brrock/mcp-client-chatbot
+[33ma42116f[m feat: update XAI model versions to use latest releases for grok-3-mini and grok-3
+[33m4eae76d[m Feat: Add vercel deployment and docker
+[33m4eb4d71[m feat: update Google model to use gemini-2.5-flash version
+[33mf9034ae[m feat: add message deletion functionality to ToolMessagePart component
+[33mcf3165d[m feat: delete message
+[33mf89d7c0[m chore: mermaid support
+[33m889442f[m feat: enhance tool filtering logic in chat route and improve tool selector component styling
+[33m0080b5a[m feat: add local build script and update README for local testing instructions; enhance middleware secure cookie handling based on deployment environment
+[33mfc694de[m fix: update wording in ChatPreferencesDialogContent for clarity on personal preferences and guidelines
+[33mcfea758[m Merge branch 'cgoinglove:main' into main
+[33mad5df9c[m docs: add note for local production testing with NextAuth configuration in README and Korean documentation
+[33mc639900[m[33m ([m[1;33mtag: [m[1;33mv0.6.0[m[33m)[m Merge pull request #31 from cgoinglove/beta
+[33ma7e83b2[m chore: remove obsolete memory bank files including activeContext, productContext, progress, projectbrief, systemPatterns, tasks, and techContext
+[33m482ba79[m fix: adjust textarea dimensions in ChatPreferencesDialogContent for improved user experience
+[33mf570ad1[m feat: user preference
+[33mc845f2c[m feat: update user preferences management to use displayName and enhance chat preferences dialog functionality
+[33m32268b1[m feat: enhance ToolMessagePart with input/output copy functionality and JSON parsing for tool results
+[33me1eda95[m refactor: update chat repository methods and enhance system prompt handling
+[33m9bbf554[m refactor: streamline space class usage in ChatBot and update styling in ToolMessagePart
+[33ma2d4c6d[m fix: enhance error logging by including error name in handleError function
+[33m9956c3f[m fix: add rounded corners to error message styling in AssistMessagePart component
+[33mc9ae1f6[m feat: add error logging and redirect for thread not found in selectThreadWithMessagesAction
+[33m8ef2ef8[m memory-bank
+[33m653c926[m feat: implement user preferences management with new API endpoints and database schema updates
+[33m575b6d0[m Initialize project with Next.js, TypeScript, AI SDK integration and Model Context Protocol support
+[33m46422dd[m feat: add message for no tools available in tool selector
+[33mdff0236[m Merge branch 'main' of https://github.com/brrock/mcp-client-chatbot
+[33m623e7ad[m[33m ([m[1;33mtag: [m[1;33mv0.5.1[m[33m)[m Merge pull request #29 from cgoinglove/beta
+[33m48e9a43[m fix: update SQL syntax to use double quotes for table names in migrations
+[33mcf1ec48[m Merge branch 'main' of https://github.com/cgoinglove/mcp-client-chatbot
+[33mef1c9aa[m Add postinstall
+[33m5065149[m feat: add Wrench icon to ToolMessagePart component
+[33m02b598b[m[33m ([m[1;33mtag: [m[1;33mv0.5.0[m[33m)[m Merge pull request #28 from cgoinglove/feat/tool-setup
+[33m5308fbf[m feat: update tool count calculation to utilize MCP server info
+[33m30dff8d[m refactor: remove debug log for allowed tools in chat route
+[33m37a09f8[m feat: update default model to "4o" in AI models
+[33m9cc735b[m feat: tool select
+[33m6c16874[m feat: tool setup
+[33m72063ad[m temporary
+[33m922cada[m feat: extend app state and components with new toolkit and server management features
+[33m3145f91[m[33m ([m[1;33mtag: [m[1;33mv0.4.1[m[33m)[m feat: add user feedback for unsaved messages in ErrorMessage component
+[33md5301ee[m fix: improve error handling and UI feedback in chat components
+[33m21c7390[m feat: enhance chat functionality with message retrieval and error handling improvements
+[33m8dc2584[m feat: enhance temporary chat functionality and update model handling
+[33m65a59bb[m feat: enhance error handling and UI components in chat functionality
+[33m6a5f693[m chore: update tailwind-merge dependency to version 3.3.0 and add instrumentation for MCP manager initialization
+[33m7487e4e[m fixed: next-auth route runtime
+[33mde14054[m refactor: update mcpClientsManager import paths and remove logger usage
+[33m2448177[m fix: update dependencies and improve MCP client initialization
+[33m81508bc[m feat: enhance ChatBot and PromptInput components with tool invocation handling
+[33m69b642f[m feat: enhance ChatBot and MessageEditor components with latest reference
+[33me9597d0[m feat: implement temporary chat API and enhance UI components
+[33m56a6b42[m feat: add temporary chat functionality and integrate vaul for drawer components
+[33ma983509[m refactor: clean up chat component and API logic
+[33m5ddc0e4[m refactor: replace service layer with repository pattern for database interactions
+[33m485f8d7[m Merge pull request #26 from ronaldaug/main
+[33m90ceaa4[m fix: DB defaults to SQLite even when USE_FILE_SYSTEM_DB is false
+[33mc462c64[m refactor: streamline MCP client selection and enhance server binding logic
+[33m6dd4d30[m refactor: improve MCPServerBindingSelector interaction and UI
+[33m04b1b7d[m refactor: enhance MCP client management and UI components
+[33ma3d46b9[m refactor: exclude content from messages in chat route
+[33m1de3510[m refactor: remove unused imports from mcp-card component
+[33me9f9cfe[m fix: update MentionItemType and filter logic in prompt-input
+[33m23ffc42[m fix: prevent effect execution when MCPServerBindingSelector is closed
+[33ma3d6ac7[m refactor: deprecate disconnectMcpClientAction and remove related components
+[33md037f99[m feat: implement server cache initialization based on environment
+[33m5cda00c[m chore: update package dependencies and improve component functionality
+[33m6533f32[m fix: remove window reload on error handling in MCPServerBindingSelector
+[33m89d21a9[m Merge pull request #19 from cgoinglove/pre-main
+[33m0da501a[m refactor: remove unused MCPIcon import from prompt-input component
+[33md6f70d2[m feat: enhance MCP server binding component with improved UI and functionality
+[33mb1be8c1[m feat: mcp server binding
+[33m0efc604[m feat: implement MCP server binding functionality
+[33m77cd9da[m fix: update AppHeader link behavior for temporary chat navigation
+[33md6f5c65[m Update project_with_mcp.md
+[33mb34c8a9[m docs: update README and Korean documentation to reflect changes in tips and guides section, and add new project management guide
+[33m00d5187[m refactor: remove isThinking prop and associated animation from ReasoningPart component
+[33m032358c[m feat: update AppHeader button for temporary chat with size and variant adjustments
+[33md321048[m feat: enhance project management features with project renaming and improved dropdown UI
+[33m44aaeb8[m[33m ([m[1;33mtag: [m[1;33mv0.4.0[m[33m)[m docs: remove redundant description of built-in chart tools in Korean documentation
+[33m5746b78[m Update README.md
+[33m7ea693e[m docs: add built-in chart tools section to README and Korean documentation
+[33m8a31786[m fix: update text rendering in EmptySlot component and optimize imports in message-parts
+[33m2f4dd19[m feat: refactor chat actions and components for improved functionality and performance
+[33mfd94720[m feat: default tools (chart)
+[33m1960184[m fix: remove unnecessary padding from blockquote in markdown component
+[33m9f81e3f[m docs: update README and Korean documentation to reflect new roadmap features and changes
+[33m4e0e3d0[m feat: add temporary chat functionality with dedicated page and API support
+[33mb6244ea[m chore(deps): bump dependencies via pnpm up
+[33m77b38cf[m feat: update MCP client name validation to allow hyphens in addition to alphanumeric characters
+[33m855843f[m feat: update tool choice logic in chat API to handle required tools
+[33ma2273b0[m feat: enhance ProjectDropdown and ThreadDropdown components with side and align props
+[33mb7a3b09[m refactor: rename deleteNonProjectThreadsAction to deleteThreadsAction and implement deleteAllThreads method in chat services
+[33md5f23a9[m feat: enhance Next.js configuration with cleanDistDir and updated devIndicators
+[33m4407257[m refactor: update MCP card layout and link destination
+[33meb59068[m feat: add name validation for MCP client to ensure only alphanumeric characters are allowed
+[33m5b1ed12[m fix: modify MCP client initialization logic to allow configuration without development mode check
+[33m7969b0f[m fix: update Node.js engine version compatibility in package.json to support multiple versions
+[33maadca01[m Merge pull request #14 from mettamatt/fix/google-function-name-validation
+[33m39bd460[m Merge branch 'main' into fix/google-function-name-validation
+[33ma7f79b0[m fix: sanitize function names for Google provider compatibility
+[33m77ad6ef[m[33m ([m[1;33mtag: [m[1;33mv0.3.0[m[33m)[m Auth and Database Schema Overhaul
+[33m7a2cbf4[m feat: implement smooth scrolling for user messages upon submission status and pass status prop to relevant components
+[33m1ea521d[m feat: initialize selectedToolIndex to 0 based on searchQuery changes for improved user experience
+[33mdf607ee[m refactor: update selectedTool and simplifiedSchema logic to use filteredTools for improved performance and clarity
+[33m9487d04[m feat: enhance MentionInput and PromptInput components to support tool and server mentions with improved UI elements
+[33md86c100[m style: update ToolChoiceDropDown component layout and separator styling for improved UI consistency
+[33m1b580ac[m[33m ([m[1;33mtag: [m[1;33mv0.2.0[m[33m)[m docs: enhance README and Korean documentation with Tool Choice Mode details for improved user guidance
+[33m259e107[m chore: update preview image to improve visual representation in documentation
+[33m300020d[m Update README.md
+[33mca3074d[m fix: set default toolChoice to "auto" in app store and remove unnecessary logging in chat route
+[33m7060dcc[m refactor: rename activeTool to toolChoice in ProjectPage and update related API call for consistency
+[33m0ed3290[m style: update background color in dark theme and clean up MCPCard component for improved UI consistency
+[33mcd61b94[m style: update background color in ToolMessagePart component for improved visual consistency
+[33mfcc5a3e[m style: update message part styling for last user message to use rounded-2xl instead of rounded-4xl for improved UI consistency
+[33mbe2081b[m refactor: remove unused MCP tool imports from chat-bot component for cleaner code
+[33maed35f1[m feat: add MCP server dropdown component and integrate it into the prompt input for enhanced server management
+[33m473b043[m fix: correct spelling of 'manual' in tool invocation handling and related logging
+[33mdacde38[m feat: enhance manual tool invocation handling and logging
+[33m479c00d[m feat:  tool choice menual
+[33m2b8ad19[m Refactor Next.js configuration to remove unused parameter and update MCPClient logging from debug to info level for better clarity.
+[33m8ee8fe8[m package.json author
+[33m19ab39e[m Update build script in package.json to clean .next directory before building with Next.js for improved build consistency.
+[33m6851de5[m Update package dependencies to latest versions, including @ai-sdk/google, react-resizable-panels, @types/node, tsx, and @typescript-eslint packages for improved stability and performance.
+[33md2f2cd7[m Merge branch 'refactor'
+[33me143b15[m Refactor object state management by renaming useObjectState hook and removing deprecated use-object-reducer file.
+[33m4210629[m Implement objectFlow utility for enhanced object manipulation, add tests for fuzzySearch and utils functions, and create MemoryCache tests for key-value storage and expiration behavior.
+[33m7646262[m Refactor chat route to implement Zod schema validation for request body, rename tool call check function for clarity, and enhance tool filtering logic based on annotations.
+[33mf310ce0[m Merge pull request #12 from cgoinglove/refactor
+[33mc718d8d[m Merge branch 'main' into refactor
+[33mfd5f226[m Update GitHub Actions workflow to use Node.js setup version 3, integrate pnpm for dependency management, and add caching for pnpm store. Include a step to run tests after type checking.
+[33mcdc2029[m Refactor cache implementation to use a unified key format, update cache interface for improved type safety, and enhance project instruction handling in actions. Add test execution step in CI workflow and update biome.json to ignore TypeScript declaration files.
+[33m71f2ea0[m Update ko.md
+[33m1ddac2f[m Update README.md
+[33ma68f178[m Refactor linting scripts in package.json to separate biome and next lint commands, ensuring a clearer linting process.
+[33m6357a54[m Refactor ToolsList component to remove unused serverName prop, update noUnusedVariables rule to error in biome.json, and improve type handling in various components by renaming event parameters for clarity.
+[33m84db6ab[m Merge pull request #11 from joo-chang/main
+[33md8faa25[m Fix prevent duplicate project creation on Korean input - ignore Enter event during IME composition
+[33m70205ba[m Merge pull request #10 from joo-chang/add-enter-function
+[33mce932e5[m Improve enter key functionality in create project popup
+[33m100cc29[m Add enter key functionality to create project popup
+[33mefaa0ef[m Enhance chat functionality by adding annotations to ChatMessage, updating database schemas for SQLite and PostgreSQL, and implementing type checks. Introduce a new check-types script in package.json. Update version in flag.ts to 0.0.6. Refactor message handling in UserMessagePart to support tool mentions highlighting.
+[33m601d0a9[m add "use client"
+[33ma44fda3[m[33m ([m[1;33mtag: [m[1;33mv0.1.0[m[33m)[m Update README and Korean documentation to reflect project as an open-source initiative, enhance content structure, and replace outdated images with new ones. Remove unused image files to streamline documentation.
+[33m1b56868[m Update README.md
+[33mbb3f226[m Remove Hero component from the project, streamlining the codebase by eliminating unused imports and related functionality.
+[33m7145289[m Update chat route to increase maxSteps from 5 to 10, remove unused Separator imports in MCP create and modify pages, enhance ChatBot component with improved message handling, and add a new Hero component for better UI presentation. Update greeting logic to personalize user experience and adjust placeholder text in PromptInput for clarity.
+[33mde7510d[m Update markdown component to improve rendering by adding a space after children in FadeIn and removing unnecessary WordByWordFadeIn wrapper from code and paragraph elements, enhancing readability and performance.
+[33mdc96336[m Refactor project-system-message-popup component by removing unused imports for Input, Label, and Lightbulb, streamlining the code and improving maintainability.
+[33me460c47[m Implement insertProjectWithThreadAction to create projects with associated threads, enhancing project management capabilities. Update CreateProjectWithThreadPopup to utilize new action and improve instruction generation with AI integration. Refactor UI elements for better user experience and navigation.
+[33m48cb5bc[m Refactor CreateProjectWithThreadPopup to utilize a state management hook for project options, enhancing the multi-step project creation process. Introduce separate components for project name and instructions steps, improving code organization and user experience. Update step navigation logic and UI elements for better clarity and interaction.
+[33m5bca697[m Enhance CreateProjectWithThreadPopup by implementing a multi-step project creation process, allowing users to define project name, select model, and generate instructions. Refactor component structure for improved user experience and integrate new UI elements for better navigation.
+[33m26d7cbc[m Update insertProjectAction to accept optional instructions parameter for enhanced project creation. Refactor imports in chat-bot component to streamline code.
+[33m8bcdb95[m Enhance ThreadDropdown component by integrating CreateProjectWithThreadPopup for project summarization, adding side and align props for positioning, and refactoring update and delete functionalities for improved user interaction. Update AppSidebarThreads to position dropdown on the right.
+[33m843e239[m Update styles for mentions in globals.css, refactor CreateProjectPopup to use PropsWithChildren, and integrate it into AppSidebarProjects for improved project creation flow. Add a new summarization prompt in prompts.ts for enhanced AI assistance.
+[33mfe81b6f[m Remove unnecessary input handling in PromptInput component to simplify text processing logic.
+[33mc8a81f7[m Refactor chat page and chat-bot component to enhance thread handling and project integration. Updated fetch logic to retrieve thread data with messages, added projectId support in ChatBot, and streamlined message conversion for improved functionality.
+[33m00c9ba0[m Implement server-side caching for project instructions and enhance project action functions. Added MemoryCache for caching, updated insertProjectAction to include systemPrompt, and integrated rememberProjectInstructionsAction in the chat route for improved project management.
+[33m1760ac2[m Enhance ProjectPage and ThreadDropdown components by adding key props for thread mapping, implementing onDeleted callback for thread deletion, and improving project display in AppHeader. This update streamlines thread management and enhances user experience.
+[33m50b253d[m Remove unused imports from project page component to streamline code and improve readability.
+[33m70f58be[m Update project page layout and enhance functionality. Introduced FeatureCard component for adding files and instructions, improved project thread display, and updated app state management. Adjusted global styles for card background color and refined toast notifications for unimplemented features.
+[33mf34f467[m Refactor project and thread handling in chat service. Updated AppState to omit instructions from Project type, renamed deleteAllThreads to deleteNonProjectThreads, and introduced projectId in thread creation. Enhanced prompt generation for tool schema and replaced Loader2 with Loader component across various UI elements for consistency.
+[33md4c7ff4[m Enhance chat service by adding project-related actions and updating thread handling. Introduced selectProjectById, updateProject, and deleteProject functions, and modified updateThreadAction to accept thread ID as a parameter. Updated database queries for improved project management.
+[33m700654f[m add app-sidebar-projects
+[33m166f502[m Merge branch 'main' into feat/projects
+[33m745de17[m Update chat-bot component to adjust gradient height for improved visual design
+[33m8b2ba1f[m Update sidebar styles and improve layout in various components for better UI consistency
+[33mb0e72ea[m Merge branch 'main' into feat/projects
+[33mec55bbf[m fix sonnet model
+[33m3fdb047[m Remove unnecessary gradient background from ChatBot component, comment out AppSidebarProjects in AppSidebar, and update ChatService to include projectId in insertThread method.
+[33m6420e4a[m Fix log message for existing .mcp-config.json to indicate success
+[33m56038a0[m update service
+[33m78083ae[m 추가: ChatThreadSchema에 projectId 필드를 추가하여 프로젝트 관련 데이터 구조를 확장했습니다.
+[33ma7323c7[m Update initial command in package.json to include database migration and increment version number in flag.ts to 0.0.5.
+[33m067f9e8[m Merge branch 'main' into feat/projects
+[33m5bdca84[m add sqlite project schema
+[33mf261412[m 프로젝트 스키마를 PostgreSQL 및 SQLite 데이터베이스 스키마에 추가하여 프로젝트 관련 데이터 구조를 정의했습니다.
+[33m520e39b[m Change logger from warn to error for update requirement in flag.ts and add process exit on failure.
+[33m8d3da66[m Update version number in flag.ts from 0.0.3 to 0.0.4 for release.
+[33m087ea5e[m Merge pull request #2 from minpeter/mp-add-gemma-3-tool-support
+[33md11dcff[m Fix missing newline at end of package.json for proper file formatting
+[33m3132646[m Add @ai-sdk-tool/parser dependency and remove relaxed-json. Update gemmaToolMiddleware import path for improved tool call processing.
+[33mf3cf4a6[m Merge pull request #4 from ChrisLally/accept-env-vars
+[33m06cd268[m accept env vars working
+[33mf7793ab[m 페이지 컴포넌트에 'Server Market' 버튼 추가하여 서버 목록으로의 링크 제공. 사용자 경험 향상.
+[33m45a4a76[m Reorder DEFAULT_CONFIG in generate-mcp-config.ts to improve clarity and maintain consistency. Adjust margin in chat-bot component for better layout.
+[33mf47d2b6[m Refactor chat-bot component to conditionally render ThinkingMessage based on user role in the last message, improving clarity in streaming status handling.
+[33m5ef222a[m Update DEFAULT_MODEL to "gpt-4.1-mini" for improved model selection in AI functionality.
+[33m35c948c[m Update README and Korean documentation with improved tool integration examples and prompt usage. Refactor button label in the MCP test page for clarity. Adjust chat-bot component to handle streaming status. Enhance McpListCombo component with additional detail tooltip and layout improvements.
+[33m1ba3d59[m Update MCP configuration script to include Playwright command and args for improved testing capabilities.
+[33m37a5e96[m LICENSE
+[33ma2813e0[m Refactor McpListCombo component by removing the MCP server registry link and adjusting the layout for better responsiveness. Update styles for PopoverContent and Card components to enhance UI consistency and improve overflow handling.
+[33m1436872[m Implement GenerateExampleInputJsonDialog component to streamline example JSON generation process. Refactor page component to utilize the new dialog, enhancing user experience with improved model selection and prompt input. Remove redundant state management for cleaner code.
+[33m8e3d6ee[m Remove @ai-sdk-tool/parser dependency and add relaxed-json for improved JSON handling. Refactor gemmaToolMiddleware import path and implement tool-call middleware with utility functions for enhanced tool call processing.
+[33m355d62d[m Add @ai-sdk-tool/parser dependency and integrate gemmaToolMiddleware for improved model handling in AI services
+[33ma8055bb[m Enhance chat actions by adding generateExampleToolSchemaAction for generating example input JSON based on tool information. Update page component to integrate new action, allowing users to generate example JSON with a prompt and selected model. Improve UI with loading states and model selection for better user experience.
+[33m17cb215[m Implement deleteAllThreads functionality in chat service and integrate it into the AppSidebarThreads component for enhanced thread management. Update UI to include a delete option in the sidebar with appropriate loading and success/error handling.
+[33m6e17854[m Remove unnecessary console log from chat API route to streamline code and improve performance.
+[33md58d435[m Refactor tool filtering logic in chat API route to utilize mention-based matching for improved accuracy. Update prompt input component to enhance tool list structure and ensure better integration of MCP tool information.
+[33m7c01b18[m lint
+[33m1a3591d[m[33m ([m[1;33mtag: [m[1;33mv0.0.4[m[33m)[m Enhance MentionInput component by integrating fuzzy search for improved item filtering and suggestion accuracy. Refactor editor configuration and memoize components for better performance. Add new fuzzy-search utility for efficient query handling.
+[33m506361c[m Implement tool filtering based on required annotations in chat API route, enhancing tool selection logic for improved functionality. Update POST request handling to accommodate new filtering mechanism.
+[33mf520124[m Update README and Korean documentation for MCP Client Chatbot, enhancing descriptions, adding new features, and improving structure. Include new demo images and clarify installation and setup instructions for better user experience.
+[33m578be10[m Refactor chat API route to simplify tool choice logic by removing unnecessary annotations handling and streamlining tool selection process for improved clarity and performance.
+[33me39d390[m Update McpListCombo component to include ChevronDown icon, adjust padding and margins for better layout, and enhance server connection toggle with tooltips for improved user experience.
+[33m2c4b835[m Enhance project setup by adding initial check script to package.json, implementing flag management for MCP tools, and integrating mention input component for improved user experience. Update MCP client management to include tool IDs and refine chat message handling with annotations for required tools. Additionally, update various dependencies and styles for better functionality and appearance.
+[33m784a834[m Remove unused import of AnimatePresence from message component to streamline code and improve performance.
+[33mf693b00[m Refactor message rendering in PurePreviewMessage component for improved structure and readability. Update markdown components to include WordByWordFadeIn for enhanced text animations. Remove console log from MCP tool action error handling.
+[33me8a48b9[m 패키지에 @radix-ui/react-accordion 추가 및 관련 종속성 업데이트. 앱 상태에 activeTool 속성 추가 및 관련 컴포넌트 수정. MCP 도구 목록과 세부 정보 팝업 컴포넌트 구현. 불필요한 mcp-tool-select 컴포넌트 삭제.
+[33m7dfbc7a[m Refactor message handling in UserMessagePart and PurePreviewMessage components to improve type safety and enhance rendering logic for text messages. Update PromptInput to correctly handle pasted text as message parts.
+[33m6eb5e0e[m Update dependencies in package.json and pnpm-lock.yaml, refactor chat API route to use 'action' instead of 'mode', and enhance message handling in components for improved functionality and readability.
+[33mb1852ad[m Refactor PurePreviewMessage component by removing unnecessary fragment and simplifying JSX structure for improved readability.
+[33m828c809[m Update layout metadata for MCP Chat and replace favicon.ico
+[33m2d91894[m Enhance ReasoningPart component by adding isThinking prop for loading indication and improving click handling for expanded content. Update PurePreviewMessage to pass isThinking state based on message loading status.
+[33mc11c6c0[m Refactor WordByWordFadeIn component to improve child handling and simplify rendering logic. Update ThinkingMessage component to enhance loading animation with a new pulsing effect.
+[33m94f9175[m Update ReasoningPart to start collapsed by default and clean up PromptInput component by removing unused onSubmit prop.
+[33m9f2fc7e[m Implement error handling utility function and refactor AI model configurations. Add errorToString function to convert various error types to string format. Update o4-mini and gemini-2.0-thinking model configurations for improved reasoning effort handling.
+[33mea648b6[m[33m ([m[1;33mtag: [m[1;33m0.0.3[m[33m)[m feat: mcp tool test
+[33mab833bb[m Enhance MCP functionality by adding new selectMcpClientAction for client retrieval, updating MCP pages with improved layouts and search capabilities, and integrating react-resizable-panels for better UI management. Update package.json and pnpm-lock.yaml to include new dependencies.
+[33m99d530a[m Update ToolMessagePart component styling to improve layout by adding minimum width and adjusting alignment for better visual consistency.
+[33mbcf3dd3[m Refactor MCP editor component by removing the RequiredLabel wrapper for field labels, simplifying the JSX structure. Update input and textarea components to enhance styling consistency and improve background handling.
+[33mddbbe2f[m Update package dependencies and enhance AI model configurations. Bump versions for @ai-sdk/openai, @libsql/client, ai, framer-motion, and zod. Modify UserMessagePart component to use <p> instead of <pre> for better text rendering. Adjust models.ts to introduce new o4-mini model and enable streaming for gemma3:4b.
+[33m79567fa[m Refactor markdown component to remove unused remarkGfm plugin and simplify rendering logic in NonMemoizedMarkdown, enhancing performance and clarity.
+[33m0715270[m Enhance markdown rendering by introducing WordByWordFadeIn component for animated text display across various elements, including blockquotes, paragraphs, and headings. Update imports and utility functions for improved functionality.
+[33mf16e6b6[m Update README and Korean documentation to reflect new image paths, enhance use cases section, and improve clarity in contributing guidelines. Remove outdated GIF files for better organization.
+[33m9bc537f[m Refactor MCP configuration management by renaming mcp.config.json to .mcp-config.json, updating related documentation, and modifying package.json scripts for improved setup clarity.
+[33m328cb9a[m Remove copy-env.ts script and update package.json to reference new script location; add rimraf dependency for improved cleanup tasks.
+[33m90c4795[m[33m ([m[1;33mtag: [m[1;33m0.0.2[m[33m)[m Remove Playwright MCP configuration from mcp.config.json to streamline server setup.
+[33m722d34f[m Enhance MCP pages with new modify and test routes, add back navigation links, and update MCPCard links for improved user experience. Introduce new AI models in models.ts for expanded functionality.
+[33m4b5b753[m Integrate ScrollArea component into MCP page layout for improved scrolling experience, while maintaining existing structure and loading states.
+[33m7cd58b2[m Update .gitignore to include mcp.config.json and .cursorrules for better file management.
+[33m6bda378[m Refactor Loading component to remove unnecessary aria-label, update MCP page to include Plus icon in Add MCP Server button, and enhance MCPCard component with serverName prop and new Tools Test button. Remove unused modify page for MCP clients.
+[33m010abca[m Add XAI_API_KEY and ANTHROPIC_API_KEY to .env.example for improved API integration
+[33mce4fba4[m Refactor ThreadDropdown component to use appStore for currentThreadId instead of useParams, improving state management and code clarity.
+[33m2c80158[m Update mcp.config.json to add playwright configuration, modify README and Korean documentation with new prompt examples, and replace outdated configuration image with a GIF.
+[33m6a69237[m[33m ([m[1;33mtag: [m[1;33m0.0.1[m[33m)[m Update README and Korean documentation to include a link to the Roadmap; remove the now-deleted ROADMAP.md file.
+[33m28f1bd5[m Replace ChatOverview with Greeting component in ChatBot and remove ChatOverview file. Add new Greeting and MCPIcon components for enhanced user experience.
+[33m8cd2195[m Fix image paths in Korean documentation for MCP Client Chatbot Demo and configuration
+[33m361066f[m Update package.json scripts, add README and Korean documentation, and enhance message display styles
+[33md947352[m Enhance ThinkingMessage component with loading dots animation
+[33macccd8d[m first commit
