@@ -18,23 +18,43 @@ const ollama = createOllama({
 
 const staticModels = {
   openai: {
+    // Latest GPT-5 family (November 2025)
+    "gpt-5": openai("gpt-5"),
+    "gpt-5.1": openai("gpt-5.1"),
+    "gpt-5-mini": openai("gpt-5-mini"),
+    // GPT-4.1 family
     "gpt-4.1": openai("gpt-4.1"),
     "gpt-4.1-mini": openai("gpt-4.1-mini"),
-    "4o": openai("gpt-4o"),
-    "4o-mini": openai("gpt-4o-mini", {}),
+    "gpt-4.1-nano": openai("gpt-4.1-nano"),
+    // GPT-4o family (legacy but still useful)
+    "gpt-4o": openai("gpt-4o"),
+    "gpt-4o-mini": openai("gpt-4o-mini"),
+    // o-series reasoning models
     "o4-mini": openai("o4-mini", {
       reasoningEffort: "medium",
     }),
+    // Realtime model for voice
+    "gpt-realtime": openai("gpt-realtime"),
   },
   google: {
-    "gemini-2.0-flash-lite": google("gemini-2.0-flash-lite"),
-    "gemini-2.5-flash": google("gemini-2.5-flash"),
+    // Latest Gemini 3 (November 2025)
+    "gemini-3-pro": google("gemini-3-pro"),
+    "gemini-3-pro-image": google("gemini-3-pro-image"),
+    // Gemini 2.5 family (current production)
     "gemini-2.5-pro": google("gemini-2.5-pro"),
+    "gemini-2.5-flash": google("gemini-2.5-flash"),
+    "gemini-2.5-flash-lite": google("gemini-2.5-flash-lite"),
+    "gemini-2.5-computer-use": google("gemini-2.5-computer-use"),
+    // Legacy
+    "gemini-2.0-flash-lite": google("gemini-2.0-flash-lite"),
   },
   anthropic: {
-    "claude-4-sonnet": anthropic("claude-4-sonnet-20250514"),
-    "claude-4-opus": anthropic("claude-4-opus-20250514"),
-    "claude-3-7-sonnet": anthropic("claude-3-7-sonnet-latest"),
+    // Latest Claude 4.5 family (November 2025)
+    "claude-opus-4.5": anthropic("claude-opus-4-5-20251101"),
+    "claude-sonnet-4.5": anthropic("claude-sonnet-4-5-20250929"),
+    "claude-haiku-4.5": anthropic("claude-haiku-4-5-20251015"),
+    // Legacy Claude 3.7
+    "claude-3.7-sonnet": anthropic("claude-3-7-sonnet-20250224"),
   },
   xai: {
     "grok-3": xai("grok-3-latest"),
@@ -52,13 +72,20 @@ const staticModels = {
 };
 
 const staticUnsupportedModels = new Set([
+  // Reasoning models don't support tool calls
   staticModels.openai["o4-mini"],
+  // Lite/small models with limited capabilities
   staticModels.google["gemini-2.0-flash-lite"],
+  staticModels.google["gemini-2.5-flash-lite"],
   staticModels.ollama["gemma3:1b"],
   staticModels.ollama["gemma3:4b"],
   staticModels.ollama["gemma3:12b"],
   staticModels.openRouter["qwen3-8b:free"],
   staticModels.openRouter["qwen3-14b:free"],
+  // Specialized models (image generation, computer use, voice)
+  staticModels.google["gemini-3-pro-image"],
+  staticModels.google["gemini-2.5-computer-use"],
+  staticModels.openai["gpt-realtime"],
 ]);
 
 const openaiCompatibleProviders = openaiCompatibleModelsSafeParse(

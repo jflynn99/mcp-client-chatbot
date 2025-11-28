@@ -7,6 +7,7 @@ import { CheckIcon, ChevronDown } from "lucide-react";
 import { Fragment, memo, PropsWithChildren, useEffect, useState } from "react";
 import { Button } from "ui/button";
 import { ClaudeIcon } from "ui/claude-icon";
+import { getModelMetadata } from "lib/ai/model-metadata";
 
 import {
   Command,
@@ -37,6 +38,12 @@ export const SelectModel = (props: PropsWithChildren<SelectModelProps>) => {
     setModel(props.defaultModel ?? appStore.getState().chatModel);
   }, [props.defaultModel]);
 
+  const selectedModelMetadata = model
+    ? getModelMetadata(model.provider, model.model)
+    : undefined;
+  const selectedModelDisplayName =
+    selectedModelMetadata?.displayName || model?.model;
+
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
@@ -47,7 +54,7 @@ export const SelectModel = (props: PropsWithChildren<SelectModelProps>) => {
             className="data-[state=open]:bg-input! hover:bg-input! "
           >
             <p className="mr-auto">
-              {model?.model ?? (
+              {selectedModelDisplayName ?? (
                 <span className="text-muted-foreground">model</span>
               )}
             </p>
@@ -73,37 +80,51 @@ export const SelectModel = (props: PropsWithChildren<SelectModelProps>) => {
                     e.stopPropagation();
                   }}
                 >
-                  {provider.models.map((item) => (
-                    <CommandItem
-                      key={item.name}
-                      className="cursor-pointer"
-                      onSelect={() => {
-                        setModel({
-                          provider: provider.provider,
-                          model: item.name,
-                        });
-                        props.onSelect({
-                          provider: provider.provider,
-                          model: item.name,
-                        });
-                        setOpen(false);
-                      }}
-                      value={item.name}
-                    >
-                      {model?.provider === provider.provider &&
-                      model?.model === item.name ? (
-                        <CheckIcon className="size-3" />
-                      ) : (
-                        <div className="ml-3" />
-                      )}
-                      <span className="pr-2">{item.name}</span>
-                      {item.isToolCallUnsupported && (
-                        <div className="ml-auto flex items-center gap-1 text-xs text-muted-foreground">
-                          No tools
+                  {provider.models.map((item) => {
+                    const metadata = getModelMetadata(
+                      provider.provider,
+                      item.name,
+                    );
+                    const displayName = metadata?.displayName || item.name;
+                    return (
+                      <CommandItem
+                        key={item.name}
+                        className="cursor-pointer"
+                        onSelect={() => {
+                          setModel({
+                            provider: provider.provider,
+                            model: item.name,
+                          });
+                          props.onSelect({
+                            provider: provider.provider,
+                            model: item.name,
+                          });
+                          setOpen(false);
+                        }}
+                        value={item.name}
+                      >
+                        {model?.provider === provider.provider &&
+                        model?.model === item.name ? (
+                          <CheckIcon className="size-3" />
+                        ) : (
+                          <div className="ml-3" />
+                        )}
+                        <span className="pr-2">{displayName}</span>
+                        <div className="ml-auto flex items-center gap-1">
+                          {metadata?.badge && (
+                            <span className="text-xs px-1.5 py-0.5 rounded bg-primary/10 text-primary">
+                              {metadata.badge}
+                            </span>
+                          )}
+                          {item.isToolCallUnsupported && (
+                            <span className="text-xs text-muted-foreground">
+                              No tools
+                            </span>
+                          )}
                         </div>
-                      )}
-                    </CommandItem>
-                  ))}
+                      </CommandItem>
+                    );
+                  })}
                 </CommandGroup>
                 {i < providers?.length - 1 && <CommandSeparator />}
               </Fragment>
