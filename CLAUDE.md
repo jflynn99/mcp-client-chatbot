@@ -602,7 +602,70 @@ src/
 }
 ```
 
-### 5. Streaming
+### 5. AI Models
+
+**Model Registry** (`src/lib/ai/models.ts`):
+- Central configuration for all supported AI models
+- Organized by provider (OpenAI, Anthropic, Google, XAI, Ollama, OpenRouter)
+- Supports both static and dynamic (OpenAI-compatible) models
+
+**Supported Models (2025)**:
+
+**OpenAI**:
+- `gpt-5` - Latest flagship model (November 2025)
+- `gpt-5.1` - Best for agentic and coding tasks
+- `gpt-5-mini` - Cost-effective flagship
+- `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano` - Advanced reasoning
+- `gpt-4o`, `gpt-4o-mini` - Legacy multimodal models
+- `o4-mini` - Reasoning model (no tool calls)
+- `gpt-realtime` - Voice interactions
+
+**Anthropic**:
+- `claude-opus-4.5` - Most intelligent (claude-opus-4-5-20251101)
+- `claude-sonnet-4.5` - Best for coding (claude-sonnet-4-5-20250929)
+- `claude-haiku-4.5` - Fast and efficient (claude-haiku-4-5-20251015)
+- `claude-3.7-sonnet` - Legacy reasoning model
+
+**Google**:
+- `gemini-3-pro` - Latest Google flagship (November 2025)
+- `gemini-3-pro-image` - Image generation
+- `gemini-2.5-pro` - High-capability model
+- `gemini-2.5-flash` - Fast and balanced
+- `gemini-2.5-flash-lite` - Lightweight
+- `gemini-2.5-computer-use` - UI automation
+- `gemini-2.0-flash-lite` - Legacy
+
+**XAI**:
+- `grok-3` - Latest Grok model
+- `grok-3-mini` - Faster variant
+
+**Tool Call Support**:
+- Some models don't support tool calling (marked as "No tools" in UI)
+- Specialized models: gpt-realtime, gemini-3-pro-image, gemini-2.5-computer-use
+- Reasoning models: o4-mini
+- Lite models: gemini-2.5-flash-lite, ollama models, openRouter free models
+
+**Model Metadata** (`src/lib/ai/model-metadata.ts`):
+- Display names for better UI presentation
+- Badges: "Latest", "Best", "Fast", "Voice", "Image"
+- Descriptions for each model
+
+**Usage**:
+```typescript
+import { customModelProvider } from "lib/ai/models"
+
+// Get a model instance
+const model = customModelProvider.getModel({
+  provider: "openai",
+  model: "gpt-5"
+})
+
+// Check if model supports tools
+import { isToolCallUnsupportedModel } from "lib/ai/models"
+const supportsTools = !isToolCallUnsupportedModel(model)
+```
+
+### 6. Streaming
 
 **Chat Streaming**:
 - Uses Vercel AI SDK's `streamText()`
@@ -626,7 +689,7 @@ const result = streamText({
 return result.toDataStreamResponse()
 ```
 
-### 6. Authentication
+### 7. Authentication
 
 **Better Auth**:
 - Modern auth library with built-in session management
@@ -990,7 +1053,8 @@ pnpm test -- myfile    # Run specific file
 | `src/lib/ai/mcp/create-mcp-client.ts` | Individual MCP client factory |
 | `src/lib/ai/mcp/create-mcp-clients-manager.ts` | MCP client lifecycle manager |
 | `src/lib/ai/workflow/executor/workflow-executor.ts` | Workflow execution engine |
-| `src/lib/ai/models/registry.ts` | AI model registry |
+| `src/lib/ai/models.ts` | AI model registry and configuration |
+| `src/lib/ai/model-metadata.ts` | Model display names and metadata |
 | `src/lib/ai/tools/*.ts` | Default tool implementations |
 
 ### Authentication
