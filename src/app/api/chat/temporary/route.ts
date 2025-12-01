@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import { getSession } from "auth/server";
 import { Message, smoothStream, streamText } from "ai";
-import { customModelProvider } from "lib/ai/models";
+import { customModelProvider, requiresDefaultTemperature } from "lib/ai/models";
 import logger from "logger";
 import { buildUserSystemPrompt } from "lib/ai/prompts";
 import { userRepository } from "lib/db/repository";
@@ -28,7 +28,7 @@ export async function POST(request: Request) {
     const userPreferences =
       (await userRepository.getPreferences(session.user.id)) || undefined;
 
-    return streamText({
+    const streamConfig: Parameters<typeof streamText>[0] = {
       model,
       system: `${buildUserSystemPrompt(session.user, userPreferences)} ${
         instructions ? `\n\n${instructions}` : ""
@@ -37,7 +37,15 @@ export async function POST(request: Request) {
       maxSteps: 10,
       experimental_continueSteps: true,
       experimental_transform: smoothStream({ chunking: "word" }),
-    }).toDataStreamResponse();
+    };
+
+    // Only add temperature for models that support custom values
+    if (!requiresDefaultTemperature(model)) {
+      // Can add user preference here in the future
+      // streamConfig.temperature = userPreferences?.temperature ?? 1;
+    }
+
+    return streamText(streamConfig).toDataStreamResponse();
   } catch (error: any) {
     logger.error(error);
     return new Response(error.message || "Oops, an error occured!", {

@@ -88,6 +88,16 @@ const staticUnsupportedModels = new Set([
   staticModels.openai["gpt-realtime"],
 ]);
 
+// Models that only support temperature = 1 (default) or no temperature parameter
+// These models will reject custom temperature values
+const staticFixedTemperatureModels = new Set([
+  staticModels.openai["o4-mini"],
+  staticModels.openai["gpt-5"],
+  staticModels.openai["gpt-5.1"],
+  staticModels.openai["gpt-5-mini"],
+  staticModels.openai["gpt-realtime"],
+]);
+
 const openaiCompatibleProviders = openaiCompatibleModelsSafeParse(
   process.env.OPENAI_COMPATIBLE_DATA,
 );
@@ -104,8 +114,16 @@ const allUnsupportedModels = new Set([
   ...staticUnsupportedModels,
 ]);
 
+const allFixedTemperatureModels = new Set([
+  ...staticFixedTemperatureModels,
+]);
+
 export const isToolCallUnsupportedModel = (model: LanguageModel) => {
   return allUnsupportedModels.has(model);
+};
+
+export const requiresDefaultTemperature = (model: LanguageModel) => {
+  return allFixedTemperatureModels.has(model);
 };
 
 const firstProvider = Object.keys(allModels)[0];
