@@ -10,7 +10,11 @@ import {
   Tool,
 } from "ai";
 
-import { customModelProvider, isToolCallUnsupportedModel } from "lib/ai/models";
+import {
+  customModelProvider,
+  isToolCallUnsupportedModel,
+  requiresDefaultTemperature,
+} from "lib/ai/models";
 
 import { mcpClientsManager } from "lib/ai/mcp/mcp-manager";
 
@@ -220,7 +224,8 @@ export async function POST(request: Request) {
         );
         logger.info(`model: ${chatModel?.provider}/${chatModel?.model}`);
 
-        const result = streamText({
+        // Build streamText config - only add temperature for models that support it
+        const streamConfig: Parameters<typeof streamText>[0] = {
           model,
           system: systemPrompt,
           messages,
@@ -297,7 +302,16 @@ export async function POST(request: Request) {
               });
             }
           },
-        });
+        };
+
+        // Only add temperature for models that support custom values
+        // GPT-5 series and o4-mini only support temperature = 1 (default)
+        if (!requiresDefaultTemperature(model)) {
+          // Can add user preference here in the future
+          // streamConfig.temperature = userPreferences?.temperature ?? 1;
+        }
+
+        const result = streamText(streamConfig);
         result.consumeStream();
         result.mergeIntoDataStream(dataStream, {
           sendReasoning: true,

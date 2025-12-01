@@ -1,6 +1,6 @@
 import { smoothStream, streamText } from "ai";
 
-import { customModelProvider } from "lib/ai/models";
+import { customModelProvider, requiresDefaultTemperature } from "lib/ai/models";
 import { CREATE_THREAD_TITLE_PROMPT } from "lib/ai/prompts";
 import globalLogger from "logger";
 import { ChatModel } from "app-types/chat";
@@ -38,8 +38,9 @@ export async function POST(request: Request) {
       return new Response("Unauthorized", { status: 401 });
     }
 
-    const result = streamText({
-      model: customModelProvider.getModel(chatModel),
+    const model = customModelProvider.getModel(chatModel);
+    const streamConfig: Parameters<typeof streamText>[0] = {
+      model,
       system: CREATE_THREAD_TITLE_PROMPT,
       experimental_transform: smoothStream({ chunking: "word" }),
       prompt: `Based on this user message, create a concise chat title:
@@ -59,7 +60,14 @@ Generate Title:`,
           })
           .catch((err) => logger.error(err));
       },
-    });
+    };
+
+    // Only add temperature for models that support custom values
+    if (!requiresDefaultTemperature(model)) {
+      // streamConfig.temperature = 1;
+    }
+
+    const result = streamText(streamConfig);
 
     return result.toDataStreamResponse();
   } catch (error) {
